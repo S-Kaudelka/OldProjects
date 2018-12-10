@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=SPIEL
+comment1.params=
+comment1.target=SPIEL()
+comment2.params=keystate
+comment2.target=void\ RUN(KEYSTATE)
+comment3.params=keystate
+comment3.target=void\ TastenPruefen(KEYSTATE)
+comment4.params=m
+comment4.target=void\ MausklickUeberpruefen(java.awt.Point)
+comment5.params=
+comment5.target=void\ Ausgabe()
+comment6.params=
+comment6.target=void\ AusgabeLoeschen()
+numComments=7
