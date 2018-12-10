@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=c_p
+comment0.target=SPIEL(CONTROLER)
+comment1.params=keystate
+comment1.target=void\ Action(KEYSTATE)
+comment2.params=p
+comment2.target=void\ MausklickUeberpruefen(java.awt.Point)
+comment3.params=
+comment3.target=void\ Kollisionsabfrage()
+comment4.params=
+comment4.target=void\ Springen()
+comment5.params=
+comment5.target=void\ Platformen()
+comment6.params=a\ b
+comment6.target=boolean\ ZuNah(BILD,\ int)
+comment7.params=
+comment7.target=void\ HintergrundRunter()
+comment8.params=keystate
+comment8.target=void\ TastenPruefen(KEYSTATE)
+comment9.params=a
+comment9.target=int\ Betrag(int)
+numComments=10

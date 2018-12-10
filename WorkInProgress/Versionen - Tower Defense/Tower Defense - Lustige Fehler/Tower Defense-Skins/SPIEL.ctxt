@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=c_p
+comment0.target=SPIEL(CONTROLER)
+comment1.params=keystate
+comment1.target=void\ RUN(KEYSTATE)
+comment2.params=Nummer\ Art\ S
+comment2.target=void\ TurmPlatzieren(int,\ java.lang.String,\ java.lang.String)
+comment3.params=Nummer\ Typ
+comment3.target=void\ TurmSpezialisieren(int,\ int)
+comment4.params=Nummer
+comment4.target=int\ TurmVerkaufen(int)
+comment5.params=W
+comment5.target=void\ WelleSchicken(int)
+comment6.params=
+comment6.target=void\ Ausgabe()
+comment7.params=
+comment7.target=void\ AusLoeschen()
+comment8.params=
+comment8.target=void\ SPB()
+numComments=9

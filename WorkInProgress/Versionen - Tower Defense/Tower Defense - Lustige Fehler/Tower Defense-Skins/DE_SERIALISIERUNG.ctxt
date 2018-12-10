@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DE_SERIALISIERUNG()
+comment1.params=c
+comment1.target=void\ Speichern(CONTROLER)
+comment1.text=\r\n\ Was\ soll\ gespeichert\ werden?\ +\ Reihenfolge\r\n\ \r\n\ Spieler\r\n\ Spiel\ ->\ alles\ was\ au\u00DFerhalb\ des\ konstruktors\ ver\u00E4ndert\ wird\r\n\ Wellen\ ->\ Wz\r\n\ T\u00FCrme\r\n\ Bild\r\n\ \r\n\ Was\ nicht?\ \ \ \ \ \r\n\ \r\n\ Controler\r\n\ Gegner\ ->\ Speichern\ nur\ m\u00F6glich,\ wenn\ welle\ fertig\ ist\r\n\ Gamewindow\r\n\ Keystate\r\n\ Werte\r\n
+comment2.params=c_p
+comment2.target=void\ Laden(CONTROLER)
+comment3.params=Text
+comment3.target=int\ TzZ(java.lang.String)
+comment4.params=Text
+comment4.target=boolean\ TzB(java.lang.String)
+numComments=5

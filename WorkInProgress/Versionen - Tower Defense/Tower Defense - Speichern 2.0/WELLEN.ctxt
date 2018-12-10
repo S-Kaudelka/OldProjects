@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=Spiel
+comment0.target=WELLEN(SPIEL)
+comment1.params=Von\ Bis\ Typ
+comment1.target=void\ GE(int,\ int,\ int)
+comment2.params=W
+comment2.target=void\ WelleSchicken(int)
+numComments=3

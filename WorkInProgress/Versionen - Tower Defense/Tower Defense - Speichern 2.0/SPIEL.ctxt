@@ -1,0 +1,42 @@
+#BlueJ class context
+comment0.params=c_p\ Lvl
+comment0.target=SPIEL(CONTROLER,\ int)
+comment1.params=Level
+comment1.target=void\ LevelErzeugen(int)
+comment1.text=\ ->\ Turmpl\u00E4tze\ +\ weg(BILD)\ je\ nach\ Level\ festlegen\ &\ in\ WEG\ m\u00FCssen\ die\ passenden\ Wege\ mit\ der\ gleichen\ nummer\ versehen\ werden\ &\ AnzLevel+1\r\n\ \ \ \ \r\n\ \ \ \ \ \ \ \ Vorlage\:\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ if(Level\ \=\=\ 0)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ int\ AnzTuerme_p\ \=\ 20;\r\n\ \ \ \ \ \ \ \ \ \ \ \ int\ AnzWegabschnitte\ \=\ 1;\r\n\ \ \ \ \ \ \ \ \ \ \ \ int[]\ w_x\ \=\ {0};\r\n\ \ \ \ \ \ \ \ \ \ \ \ int[]\ w_y\ \=\ {350};\r\n\ \ \ \ \ \ \ \ \ \ \ \ int[]\ w_h\ \=\ {100};\r\n\ \ \ \ \ \ \ \ \ \ \ \ int[]\ w_b\ \=\ {1500};\r\n\ \ \ \ \ \ \ \ \ \ \ \ boolean[]\ Diagonal\ \=\ {false};\r\n\ \ \ \ \ \ \ \ \ \ \ \ Point\ Start_p\ \=\ new\ Point(1500,\ 375);\r\n\ \ \ \ \ \ \ \ \ \ \ \ Point\ Ende_p\ \=\ new\ Point(-75,\ 400);\r\n\ \ \ \ \ \ \ \ \ \ \ \ int[]\ t_x\ \=\ new\ int[AnzTuerme_p];\r\n\ \ \ \ \ \ \ \ \ \ \ \ int[]\ t_y\ \=\ new\ int[AnzTuerme_p];\r\n\ \ \ \ \ \ \ \ \ \ \ \ for(int\ i\ \=\ 0;\ i\ <\ AnzTuerme_p;\ i++)\r\n\ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(i<10)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t_x[i]\ \=\ 100\ +\ i*135;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t_y[i]\ \=\ 280;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ else\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t_x[i]\ \=\ 100\ +\ (i-10)*135;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ t_y[i]\ \=\ 470;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ LevelNeu(AnzTuerme_p,\ AnzWegabschnitte,\ w_x,\ w_y,\ w_h,\ w_b,\ Diagonal,\ Start_p,\ Ende_p,\ t_x,\ t_y);\r\n\ \ \ \ \ \ \ \ }\r\n
+comment10.params=b
+comment10.target=boolean\ EndeErreicht(BILD)
+comment11.params=
+comment11.target=void\ EndePruefen()
+comment12.params=Nummer\ Art
+comment12.target=void\ TurmPlatzieren(int,\ java.lang.String)
+comment13.params=Nummer\ Typ
+comment13.target=void\ TurmSpezialisieren(int,\ int)
+comment14.params=Nummer
+comment14.target=int\ TurmVerkaufen(int)
+comment15.params=W
+comment15.target=void\ WelleSchicken(int)
+comment16.params=
+comment16.target=void\ Ausgabe()
+comment17.params=
+comment17.target=void\ AusgabeLoeschen()
+comment18.params=
+comment18.target=void\ SPB()
+comment2.params=AnzTuerme_p\ Wegabschnitte\ w_x\ w_y\ w_h\ w_b\ Diagonal\ Spawn\ Ende_p\ t_x\ t_y
+comment2.target=void\ LevelNeu(int,\ int,\ int[],\ int[],\ int[],\ int[],\ boolean[],\ java.awt.Point,\ java.awt.Point,\ int[],\ int[])
+comment2.text=\r\n\ w_\ \=>\ fuer\ Wegabschnitte\r\n\ Spawn\:\ genau\ eine\ der\ Koordinten\ muss\ 0\ sein\r\n\ Ende\:\ 75\ pixel\ vom\ Rand\ entfernt\r\n\ t_\ \=>\ fuer\ Tuerme\r\n
+comment3.params=FeldId\ x\ y
+comment3.target=void\ TurmplatzErz(int,\ int,\ int)
+comment4.params=FeldId\ x\ y\ Hoehe\ Breite\ Diagonal
+comment4.target=void\ WegErz(int,\ int,\ int,\ int,\ int,\ boolean)
+comment5.params=keystate
+comment5.target=void\ RUN(KEYSTATE)
+comment6.params=
+comment6.target=void\ GoldNachBoss()
+comment7.params=keystate
+comment7.target=void\ TastenPruefen(KEYSTATE)
+comment8.params=keystate
+comment8.target=void\ MausklickUeberpruefen(KEYSTATE)
+comment9.params=
+comment9.target=void\ UpdateTuerme_Gegner()
+numComments=19

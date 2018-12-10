@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=Name
+comment0.target=CONTROLER(java.lang.String)
+comment1.params=
+comment1.target=void\ run()
+comment2.params=
+comment2.target=void\ stop()
+comment3.params=
+comment3.target=void\ Speichern()
+comment4.params=
+comment4.target=boolean\ Laden()
+numComments=5

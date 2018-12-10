@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=Nummer\ w
+comment0.target=GEGNER(int,\ WEG)
+comment1.params=
+comment1.target=GEGNER()
+comment2.params=N
+comment2.target=void\ GegnerErzeugen(int)
+comment3.params=
+comment3.target=void\ Bewegen()
+comment4.params=
+comment4.target=void\ LifeBalken()
+numComments=5

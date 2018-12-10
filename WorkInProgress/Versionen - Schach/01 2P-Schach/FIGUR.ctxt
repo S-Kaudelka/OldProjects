@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=farbe\ art\ x\ y
+comment0.target=FIGUR(java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment1.params=
+comment1.target=void\ BildBew()
+comment2.params=b
+comment2.target=int\ BzZ(java.lang.String)
+comment2.text=Buchstabe\ zu\ Zahl
+comment3.params=z
+comment3.target=java.lang.String\ ZzB(int)
+comment3.text=Zahl\ zu\ Buchstabe
+numComments=4

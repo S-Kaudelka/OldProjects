@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=MONSTER
+comment1.params=Name_p\ u_p\ r_p
+comment1.target=MONSTER(java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=void\ Monster()
+comment3.params=s\ u\ r
+comment3.target=boolean\ KI(SPIEL,\ int,\ int)
+comment4.params=richtung\ s\ u\ r
+comment4.target=void\ Bewegen(java.lang.String,\ SPIEL,\ int,\ int)
+comment5.params=g\ u\ r
+comment5.target=boolean\ GegnerPruefen(GEGNER,\ int,\ int)
+comment6.params=s\ u\ r
+comment6.target=int\ WegePruefen(SPIEL,\ int,\ int)
+numComments=7

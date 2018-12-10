@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DE_SERIALISIERUNG()
+comment1.params=stage\ Dateiname
+comment1.target=void\ StartSpeichern(int,\ java.lang.String)
+comment2.params=Dateiname
+comment2.target=int\ StartLaden(java.lang.String)
+comment3.params=SpielerName
+comment3.target=void\ NeuenSpieler(java.lang.String)
+comment4.params=
+comment4.target=void\ SpielerUeberpruefen()
+comment5.params=c
+comment5.target=void\ Speichern(CONTROLER)
+comment5.text=\r\n\ Was\ soll\ gespeichert\ werden?\ +\ Reihenfolge\r\n\ \r\n\ Spieler\r\n\ Spiel\ ->\ alles\ was\ au\u00DFerhalb\ des\ konstruktors\ ver\u00E4ndert\ wird\r\n\ Wellen\ ->\ Wz\r\n\ Turmplatz\r\n\ Bild\r\n\ \r\n\ Was\ nicht?\ \ \ \ \ \r\n\ \r\n\ Controler\r\n\ Gegner\ ->\ Speichern\ nur\ m\u00F6glich,\ wenn\ welle\ fertig\ ist\r\n\ Gamewindow\r\n\ Keystate\r\n\ Werte\r\n\ Wegabschnitt\r\n\ Weg\r\n
+comment6.params=c_p
+comment6.target=boolean\ Laden(CONTROLER)
+comment7.params=Text
+comment7.target=int\ TzZ(java.lang.String)
+comment8.params=Text
+comment8.target=boolean\ TzB(java.lang.String)
+numComments=9

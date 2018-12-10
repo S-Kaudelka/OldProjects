@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=WIKI()
+comment1.params=
+comment1.target=void\ run()
+comment2.params=
+comment2.target=void\ TuermeAnzeigen()
+comment3.params=
+comment3.target=void\ TuermeWeg()
+comment4.params=Name
+comment4.target=void\ EintragTurm(java.lang.String)
+comment5.params=
+comment5.target=void\ EintragTWeg()
+comment6.params=
+comment6.target=void\ GegnerAnzeigen()
+comment7.params=
+comment7.target=void\ GegnerWeg()
+comment8.params=Name\ Nummer
+comment8.target=void\ EintragGegner(java.lang.String,\ int)
+comment9.params=
+comment9.target=void\ EintragGWeg()
+numComments=10

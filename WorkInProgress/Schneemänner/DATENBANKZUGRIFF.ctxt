@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=Datenbankdatei
+comment0.target=boolean\ VerbindungAufbauen(java.lang.String)
+comment1.params=sql
+comment1.target=ERGEBNISTABELLE\ AbfrageAbsetzen(java.lang.String)
+comment2.params=sql
+comment2.target=boolean\ AnweisungAbsetzen(java.lang.String)
+comment3.params=
+comment3.target=void\ Flush()
+comment4.params=Dateiname
+comment4.target=boolean\ ImportXML(java.lang.String)
+comment5.params=s
+comment5.target=java.lang.String\ DateTimeString2DBFormat(java.lang.String)
+comment6.params=node\ attribute
+comment6.target=java.lang.String\ GetNodeAttributeValue(org.w3c.dom.Node,\ java.lang.String)
+comment7.params=table\ a
+comment7.target=int\ GetNextAutoValue(java.lang.String,\ DATENBANKZUGRIFF.ATTRIBUT)
+comment8.params=
+comment8.target=boolean\ VerbindungSchliessen()
+numComments=9

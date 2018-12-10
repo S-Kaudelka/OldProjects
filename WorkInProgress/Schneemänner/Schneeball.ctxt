@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=x\ y\ r
+comment0.target=Schneeball(int,\ int,\ int)
+comment1.params=r
+comment1.target=void\ BewegungBest(int)
+comment2.params=x\ y
+comment2.target=void\ BewTeil(int,\ int)
+comment3.params=
+comment3.target=void\ Bewegen()
+numComments=4

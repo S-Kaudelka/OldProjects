@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=Lvl
+comment0.target=WEG(int)
+comment1.params=g
+comment1.target=void\ GehrichtungBestimmen(GEGNER)
+numComments=2

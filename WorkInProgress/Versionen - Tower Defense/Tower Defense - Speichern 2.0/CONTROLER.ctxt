@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=Level\ s
+comment0.target=CONTROLER(int,\ START)
+comment0.text=\ \ \ \ ZU\ ERLEDIGEN\:\r\n\ \ \ \ \r\n\ \ \ \ \ LevelAlsZahlInsBildReinschreiben?\ ||\ Sterne\ als\ Level?\r\n\ \ \ \ \r\n\ \ \ \ \ Bilder\ f\u00FCr\ 10+\ bei\ levelauswahl\r\n\ \ \ \ \ \r\n\ \ \ \ //Wiki\ machen\ ->\ Werte\ von\ Upgrades\ einfuegen\r\n\ \ \ \ \r\n\ \ \ \ //Turmspezialisierungen\ ->\ Werte\ ->\ ueberpruefen\ ob\ Passen\r\n\ \ \ \ \r\n\ \ \ \ //(mehr\ wellen)\r\n\ \ \ \ \r\n\ \ \ \ //mehr\ level\r\n
+comment1.params=s
+comment1.target=CONTROLER(START)
+comment2.params=
+comment2.target=void\ run()
+comment3.params=
+comment3.target=void\ end()
+comment4.params=p
+comment4.target=boolean\ Weiter(java.awt.Point)
+comment5.params=
+comment5.target=void\ Speichern()
+comment6.params=
+comment6.target=boolean\ Laden()
+numComments=7

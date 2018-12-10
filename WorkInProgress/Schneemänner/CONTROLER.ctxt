@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CONTROLER()
+comment1.params=e
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=e
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=
+comment3.target=void\ run()
+comment4.params=
+comment4.target=void\ stop()
+comment5.params=Name\ PW
+comment5.target=boolean\ Login(java.lang.String,\ java.lang.String)
+comment6.params=Name\ PW
+comment6.target=void\ Registrieren(java.lang.String,\ java.lang.String)
+comment7.params=Name\ Score
+comment7.target=void\ ScoreSetzen(java.lang.String,\ int)
+comment8.params=
+comment8.target=void\ HighscoreAusgeben()
+numComments=9

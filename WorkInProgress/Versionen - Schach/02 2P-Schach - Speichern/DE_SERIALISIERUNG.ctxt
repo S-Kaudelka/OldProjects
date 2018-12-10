@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DE_SERIALISIERUNG()
+comment1.params=c\ Dateiname
+comment1.target=void\ Speichern(CONTROLER,\ java.lang.String)
+comment1.text=\r\n\ Was\ soll\ gespeichert\ werden?\ +\ Reihenfolge\r\n\ \r\n\ Spiel\:\r\n\ AusgabeVariablen\r\n\ Feld-&FigurAusgew\r\n\ AmZug\r\n\ \r\n\ Alle\ Figurenreferenzen\ <->\ Komplettes\ feld\ \!\=\ null\r\n\ \r\n\ Figur\:\r\n\ 5\ Variablen\ ->\ u,r\ statt\ X,Y\r\n
+comment2.params=c\ Dateiname
+comment2.target=boolean\ Laden(CONTROLER,\ java.lang.String)
+comment3.params=spiel
+comment3.target=SPIEL\ ladenTrue(SPIEL)
+comment4.params=Text
+comment4.target=int\ TzZ(java.lang.String)
+comment5.params=Text
+comment5.target=boolean\ TzB(java.lang.String)
+numComments=6

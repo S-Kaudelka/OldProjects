@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=Art_p\ S\ X_p\ Y_p
+comment0.target=TURMPLATZ(java.lang.String,\ java.lang.String,\ int,\ int)
+comment1.params=
+comment1.target=void\ Angriff()
+comment2.params=
+comment2.target=void\ GegnerBestimmen()
+comment3.params=
+comment3.target=int\ TurmUpgraden()
+comment4.params=Art_p
+comment4.target=int\ TurmSpezialisieren(java.lang.String)
+comment5.params=Art_p
+comment5.target=void\ Artwerte(java.lang.String)
+comment6.params=a
+comment6.target=double\ Betrag(double)
+numComments=7

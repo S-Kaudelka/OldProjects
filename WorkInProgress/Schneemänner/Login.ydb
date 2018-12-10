@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="Windows-1252" standalone="no"?>
+<YoungDB>
+  <TableSchemas>
+    <Schema Tablename="SPIELER">
+      <Attribut Datatype="Text" Name="Name" PrimaryKey="true"/>
+      <Attribut Datatype="Text" Name="Passwort" PrimaryKey="false"/>
+      <Attribut Datatype="Ganzzahl" Name="Highscore" PrimaryKey="false"/>
+    </Schema>
+  </TableSchemas>
+  <Constraints/>
+  <Tables>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Table Tablename="SPIELER">
+<Row>
+<Item Column="0" Value="Simon"/>
+<Item Column="1" Value="12345"/>
+<Item Column="2" Value="53"/>
+</Row>
+<Row>
+<Item Column="0" Value="Janik"/>
+<Item Column="1" Value="qwertz"/>
+<Item Column="2" Value="0"/>
+</Row>
+<Row>
+<Item Column="0" Value=""/>
+<Item Column="1" Value=""/>
+<Item Column="2" Value="1"/>
+</Row>
+<Row>
+<Item Column="0" Value="Sebastian"/>
+<Item Column="1" Value="1234"/>
+<Item Column="2" Value="0"/>
+</Row>
+<Row>
+<Item Column="0" Value="Alpha"/>
+<Item Column="1" Value="12345"/>
+<Item Column="2" Value="0"/>
+</Row>
+</Table>
+</Tables>
+  <Queries/>
+</YoungDB>

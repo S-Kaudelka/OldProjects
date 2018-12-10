@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=Nummer_p
+comment0.target=Sudoku(int)
+comment1.params=Nummer_e
+comment1.target=void\ SudokuErstellen(int)
+comment2.params=Zahl\ Feld
+comment2.target=java.lang.String\ ZahlEinsetzen(int,\ java.lang.String)
+comment3.params=
+comment3.target=void\ SudokuAnzeigen()
+comment4.params=
+comment4.target=java.lang.String\ Kontrolle()
+numComments=5

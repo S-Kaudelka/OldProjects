@@ -1,0 +1,28 @@
+#BlueJ class context
+comment0.target=GEGNER
+comment1.params=Gold
+comment1.target=GEGNER(int)
+comment10.params=s
+comment10.target=void\ ZufaelligGehen(SPIEL)
+comment11.params=richtung
+comment11.target=void\ Bewegen(java.lang.String)
+comment12.params=s
+comment12.target=int\ AnzWege(SPIEL)
+comment2.params=n
+comment2.target=void\ GegnerMachen(int)
+comment2.text=\r\n\ n\ \=\ nummer\ des\ Gegners;\ haengt\ von\ Gold\ ab,\ teilweise\ zufaellig\r\n\ n\:\ \ \ 0\ \ \ Bauer\ (Bestrafung)\r\n\ \ \ \ \ \ 1\ \ \ Bauer\ (Normal)\r\n
+comment3.params=s
+comment3.target=void\ KI(SPIEL)
+comment4.params=Feld
+comment4.target=boolean\ MonsterPruefen(MONSTER[][])
+comment5.params=Feld
+comment5.target=void\ WegRechts(FELD[][])
+comment6.params=
+comment6.target=void\ ObenGehen()
+comment7.params=
+comment7.target=void\ LinksGehen()
+comment8.params=
+comment8.target=void\ UntenGehen()
+comment9.params=
+comment9.target=void\ RechtsGehen()
+numComments=13

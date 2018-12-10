@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=c_p
+comment0.target=SPIEL(CONTROLER)
+comment1.params=keystate
+comment1.target=void\ RUN(KEYSTATE)
+comment2.params=keystate
+comment2.target=void\ TastenPruefen(KEYSTATE)
+comment3.params=m
+comment3.target=void\ MausklickUeberpruefen(java.awt.Point)
+comment4.params=
+comment4.target=void\ Ausgabe()
+comment5.params=
+comment5.target=void\ AusgabeLoeschen()
+comment6.params=
+comment6.target=void\ HintergrundNeu()
+comment7.params=Benutzer\ u\ r
+comment7.target=boolean\ AngrenzendTest(java.lang.String,\ int,\ int)
+comment7.text=\r\n\ Bei\ Benutzer\:\r\n\ Stadt\ ->\ gibt\ zur\u00FCck,\ ob\ ort\ ein\ Hafen\ ist\r\n\ Haupt\ ->\ Macht\ Wasser\ um\ Hauptstadt\ zu\ Land,\ r\u00FCckgabe\ egal\r\n
+numComments=8

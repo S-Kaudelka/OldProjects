@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=Typ_p
+comment0.target=FELD(java.lang.String)
+comment1.params=u\ r
+comment1.target=void\ BildAnzeigen(int,\ int)
+numComments=2
