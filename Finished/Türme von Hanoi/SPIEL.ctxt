@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=c_p\ AnzEbenen_p
+comment0.target=SPIEL(CONTROLER,\ int)
+comment1.params=keystate
+comment1.target=void\ RUN(KEYSTATE)
+comment2.params=keystate
+comment2.target=void\ TastenPruefen(KEYSTATE)
+comment3.params=p
+comment3.target=void\ MausklickUeberpruefen(java.awt.Point)
+comment4.params=
+comment4.target=void\ TestEnde()
+comment5.params=
+comment5.target=void\ Ausgabe()
+comment6.params=
+comment6.target=void\ AusgabeLoeschen()
+numComments=7

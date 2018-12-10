@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=r\ u
+comment0.target=FELD(int,\ int)
+comment1.params=modus
+comment1.target=boolean\ Beruehrt(boolean)
+comment1.text=\ \r\n\ Gibt\ zurueck,\ ob\ eine\ Mine\ beruehrt\ wurde\r\n\ Parameter\ gibt\ an,\ ob\ Aufdecken(true)\ oder\ Markieren(false)\r\n
+numComments=2

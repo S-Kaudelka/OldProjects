@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=SPIEL
+comment1.params=gui
+comment1.target=SPIEL(GUI)
+comment2.params=
+comment2.target=void\ Neu()
+comment3.params=a\ Position
+comment3.target=void\ ZahlEintragen(int,\ int)
+numComments=4

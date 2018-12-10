@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=max_p
+comment0.target=STAB(int)
+comment1.params=s
+comment1.target=boolean\ Ablegen(SCHICHT)
+comment2.params=
+comment2.target=SCHICHT\ Nehmen()
+comment3.params=
+comment3.target=SCHICHT\ Oberster()
+comment4.params=
+comment4.target=int\ NummerOberster()
+numComments=5

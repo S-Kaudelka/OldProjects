@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=anzSpieler_p\ anzWechsel_p\ Namensliste
+comment0.target=ERSTELLEN(int,\ int,\ java.lang.String[])
+comment0.text=\ anzWechsel\ \=\ wie\ oft\ man\ an\ einen\ anderen\ tisch\ geht\r\n\ \ \ \ ->\ anzTische\ an\ denen\ man\ sitzt\ \=\ anzWechsel+1\r\n
+comment1.params=
+comment1.target=void\ Neue_Listen_Erstellen()
+comment2.params=t
+comment2.target=boolean\ BelegungTesten(TISCH[])
+comment3.params=
+comment3.target=TISCH[]\ Eine_Neue_Liste()
+numComments=4

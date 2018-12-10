@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=FRAGE
+comment1.params=nF
+comment1.target=FRAGE(int[])
+comment2.params=nF\ a
+comment2.target=boolean\ zahlVorhanden(int[],\ int)
+comment3.params=z
+comment3.target=int\ NeuFrage(int)
+comment3.text=\r\n\ Hier\ werden\ alle\ Fragen\ eingetragen.\ Die\ Erste\ Antwort\ MUSS\ die\ Richtige\ sein\r\n\ \r\n\ Es\ wird\ eine\ Zufaellige\ Frage\ ausgewaelt\ ueber\ den\ Parameter\r\n
+numComments=4

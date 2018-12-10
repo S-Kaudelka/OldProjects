@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=Name_p\ anzMitspieler_p
+comment0.target=SPIELER(java.lang.String,\ int)
+comment1.params=n
+comment1.target=boolean\ BereitsMitspieler(java.lang.String)
+comment2.params=n
+comment2.target=boolean\ MitspielerHinzufuegen(java.lang.String)
+comment3.params=
+comment3.target=int\ Auswerten()
+comment4.params=i
+comment4.target=boolean\ Doppelt(int)
+numComments=5

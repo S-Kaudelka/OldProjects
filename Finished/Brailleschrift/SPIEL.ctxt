@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=c_p
+comment0.target=SPIEL(CONTROLER)
+comment1.params=keystate
+comment1.target=void\ RUN(KEYSTATE)
+comment2.params=keystate
+comment2.target=void\ TastenPruefen(KEYSTATE)
+comment3.params=
+comment3.target=void\ Leeren()
+comment4.params=
+comment4.target=ZEICHEN\ ZeichenFertig()
+comment5.params=p
+comment5.target=void\ MausklickUeberpruefen(java.awt.Point)
+comment6.params=z
+comment6.target=java.lang.String\ ZeichenUebersetzen(ZEICHEN)
+comment7.params=z
+comment7.target=void\ Ausgabe(ZEICHEN)
+comment8.params=
+comment8.target=void\ AusgabeLoeschen()
+numComments=9

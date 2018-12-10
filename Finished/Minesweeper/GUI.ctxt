@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GUI()
+comment1.params=evt
+comment1.target=void\ mouseReleased(java.awt.event.MouseEvent)
+comment2.params=evt
+comment2.target=void\ Mausklick(java.awt.event.MouseEvent)
+comment3.params=
+comment3.target=void\ generateMenu()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment5.params=
+comment5.target=void\ run()
+numComments=6

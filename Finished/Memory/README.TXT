@@ -1,0 +1,1 @@
+Es gibt 7 Paare und 2 einzelne Karten, damit das Ergebnis eindeutig ist bei 2 Spielern
