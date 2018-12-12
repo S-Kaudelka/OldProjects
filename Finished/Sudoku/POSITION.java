@@ -3,7 +3,7 @@ public class POSITION
     public BILD img;
     private boolean marked;
     private boolean fixed;
-    private int number;
+    public int number;
     private int pos_x;
     private int pos_y;
     

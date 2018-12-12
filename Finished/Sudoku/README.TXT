@@ -4,3 +4,5 @@ Once you selected a field, press '0' to delet the number
 or the keys '1' to '9' to insert the number.
 
 Press 'N' to create a new Sudoku.
+
+Press 'C' to check, if your Solution is correct.

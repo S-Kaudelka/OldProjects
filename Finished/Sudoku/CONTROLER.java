@@ -8,7 +8,8 @@ public class CONTROLER implements Runnable
 
     //    ZU ERLEDIGEN:
     //
-    //
+    //      More Templates?
+    //      Count # of numbers?
 
     public CONTROLER()
     {
@@ -20,7 +21,7 @@ public class CONTROLER implements Runnable
     {
         while(IsRunning)
         {
-            if(AmLaufen==true)
+            if(!spiel.Finished)
             {
                 spiel.RUN(GAMEWINDOW.getInstance().getKeystate());
                 try { Thread.sleep((int) (20)); } catch (Exception e) {}
