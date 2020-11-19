@@ -20,47 +20,38 @@ public class GUI extends JFrame {
     private JButton button2;
     private JLabel label1;
     private JLabel label2;
-    private JLabel label3;
     private JLabel label4;
     private JLabel label5;
     private JLabel label6;
     private JLabel label7;
     private JLabel label8;
     private JLabel label9;
-    private JLabel label10;
-    private JLabel label11;
     private JLabel label12;
     private JLabel label13;
-    private JLabel label14;
-    private JLabel label15;
-    private JLabel label16;
-    private JLabel label17;
     private JLabel label18;
     private JTextField textfield1;
     private JTextField textfield2;
     private JTextField textfield3;
     private JTextField textfield4;
-    private JTextField textfield5;
     private JTextField textfield6;
     private JTextField textfield7;
-    private JTextField textfield8;
 
     //Constructor 
     public GUI(){
 
         this.setTitle("GUI");
-        this.setSize(1100,400);
+        this.setSize(1250,400);
         //menu generate method
         generateMenu();
         this.setJMenuBar(menuBar);
 
         //pane with null layout
         JPanel contentPane = new JPanel(null);
-        contentPane.setPreferredSize(new Dimension(1100,400));
+        contentPane.setPreferredSize(new Dimension(1250,400));
         contentPane.setBackground(new Color(192,192,192));
 
         button1 = new JButton();
-        button1.setBounds(180,300,90,35);
+        button1.setBounds(10,170,90,35);
         button1.setBackground(new Color(214,217,223));
         button1.setForeground(new Color(0,0,0));
         button1.setEnabled(true);
@@ -74,7 +65,7 @@ public class GUI extends JFrame {
             });
 
         button2 = new JButton();
-        button2.setBounds(710,300,90,35);
+        button2.setBounds(800,170,90,35);
         button2.setBackground(new Color(214,217,223));
         button2.setForeground(new Color(0,0,0));
         button2.setEnabled(true);
@@ -90,7 +81,7 @@ public class GUI extends JFrame {
             });
 
         label1 = new JLabel();
-        label1.setBounds(350,10,370,35);
+        label1.setBounds(450,10,370,35);
         label1.setBackground(new Color(214,217,223));
         label1.setForeground(new Color(0,0,0));
         label1.setEnabled(true);
@@ -99,22 +90,13 @@ public class GUI extends JFrame {
         label1.setVisible(true);
 
         label2 = new JLabel();
-        label2.setBounds(375,50,350,35);
+        label2.setBounds(475,50,350,35);
         label2.setBackground(new Color(214,217,223));
         label2.setForeground(new Color(0,0,0));
         label2.setEnabled(true);
         label2.setFont(new Font("sansserif",0,12));
         label2.setText("Insert respective population count for Okzident or Orient");
         label2.setVisible(true);
-
-        label3 = new JLabel();
-        label3.setBounds(10,205,500,35);
-        label3.setBackground(new Color(214,217,223));
-        label3.setForeground(new Color(0,0,0));
-        label3.setEnabled(true);
-        label3.setFont(new Font("sansserif",0,12));
-        label3.setText("1 Fish; 2 Cider; 3 Spices; 4 Linen Garments; 5 Bread; 6 Beer; 7 Leather Jerkins; 8 Books;");
-        label3.setVisible(true);
 
         label4 = new JLabel();
         label4.setBounds(10,90,90,35);
@@ -152,48 +134,33 @@ public class GUI extends JFrame {
         label7.setText("Noblemen");
         label7.setVisible(true);
 
+        //1 Fish; 2 Cider; 3 Spices; 4 Linen Garments; 5 Bread; 6 Beer; 7 Leather Jerkins;
+        // 8 Books; 9 Meat; 10 Fur Coats; 11 Wine; 12 Glasses; 13 Candlestick; 14 Brocade Robes
+        
         label8 = new JLabel();
-        label8.setBounds(10,350,480,35);
+        label8.setBounds(10,200,490,170);
         label8.setBackground(new Color(214,217,223));
         label8.setForeground(new Color(0,0,0));
         label8.setEnabled(true);
         label8.setFont(new Font("sansserif",0,12));
-        label8.setText("Result:");
+        label8.setText("");                                 //"Result"
         label8.setVisible(true);
-
+        
         label9 = new JLabel();
-        label9.setBounds(10,260,280,35);
+        label9.setBounds(390,200,490,170);
         label9.setBackground(new Color(214,217,223));
         label9.setForeground(new Color(0,0,0));
         label9.setEnabled(true);
         label9.setFont(new Font("sansserif",0,12));
-        label9.setText("Enter number for consumption good");
+        label9.setText("");
         label9.setVisible(true);
 
-        label10 = new JLabel();
-        label10.setBounds(10,225,500,35);
-        label10.setBackground(new Color(214,217,223));
-        label10.setForeground(new Color(0,0,0));
-        label10.setEnabled(true);
-        label10.setFont(new Font("sansserif",0,12));
-        label10.setText("9 Meat; 10 Fur Coats; 11 Wine; 12 Glasses; 13 Candlestick; 14 Brocade Robes");
-        label10.setVisible(true);
-
-        label11 = new JLabel();
-        label11.setBounds(10,180,480,35);
-        label11.setBackground(new Color(214,217,223));
-        label11.setForeground(new Color(0,0,0));
-        label11.setEnabled(true);
-        label11.setFont(new Font("sansserif",0,12));
-        label11.setText("Numbers for the consumptions goods:");
-        label11.setVisible(true);
-        
         //
         //Orient Labels
         //
 
         label12 = new JLabel();
-        label12.setBounds(600,90,90,35);
+        label12.setBounds(800,90,90,35);
         label12.setBackground(new Color(214,217,223));
         label12.setForeground(new Color(0,0,0));
         label12.setEnabled(true);
@@ -202,7 +169,7 @@ public class GUI extends JFrame {
         label12.setVisible(true);
 
         label13 = new JLabel();
-        label13.setBounds(720,90,90,35);
+        label13.setBounds(920,90,90,35);
         label13.setBackground(new Color(214,217,223));
         label13.setForeground(new Color(0,0,0));
         label13.setEnabled(true);
@@ -210,50 +177,20 @@ public class GUI extends JFrame {
         label13.setText("Envoy");
         label13.setVisible(true);
 
-        label14 = new JLabel();
-        label14.setBounds(600,210,360,35);
-        label14.setBackground(new Color(214,217,223));
-        label14.setForeground(new Color(0,0,0));
-        label14.setEnabled(true);
-        label14.setFont(new Font("sansserif",0,12));
-        label14.setText("1 Dates; 2 Goat Milk; 3 Carpet; 4 Coffee; 5 Pearl Necklace;");
-        label14.setVisible(true);
-
-        label15 = new JLabel();
-        label15.setBounds(600,225,360,35);
-        label15.setBackground(new Color(214,217,223));
-        label15.setForeground(new Color(0,0,0));
-        label15.setEnabled(true);
-        label15.setFont(new Font("sansserif",0,12));
-        label15.setText("6 Perfume; 7 Marzipan");
-        label15.setVisible(true);
-
-        label16 = new JLabel();
-        label16.setBounds(600,180,400,35);
-        label16.setBackground(new Color(214,217,223));
-        label16.setForeground(new Color(0,0,0));
-        label16.setEnabled(true);
-        label16.setFont(new Font("sansserif",0,12));
-        label16.setText("Numbers for the consumptions goods:");
-        label16.setVisible(true);
-
-        label17 = new JLabel();
-        label17.setBounds(600,260,400,35);
-        label17.setBackground(new Color(214,217,223));
-        label17.setForeground(new Color(0,0,0));
-        label17.setEnabled(true);
-        label17.setFont(new Font("sansserif",0,12));
-        label17.setText("Enter number for consumption good");
-        label17.setVisible(true);
-
+        // 1 Dates; 2 Goat Milk; 3 Carpet; 4 Coffee; 5 Pearl Necklace; 6 Perfume; 7 Marzipan
+        
         label18 = new JLabel();
-        label18.setBounds(600,350,490,35);
+        label18.setBounds(800,200,490,170);
         label18.setBackground(new Color(214,217,223));
         label18.setForeground(new Color(0,0,0));
         label18.setEnabled(true);
         label18.setFont(new Font("sansserif",0,12));
-        label18.setText("Result:");
+        label18.setText("");                                //"Result"
         label18.setVisible(true);
+
+        //
+        // Textfields
+        //
 
         textfield1 = new JTextField();
         textfield1.setBounds(10,130,90,35);
@@ -290,17 +227,8 @@ public class GUI extends JFrame {
         textfield4.setText("");
         textfield4.setVisible(true);
 
-        textfield5 = new JTextField();
-        textfield5.setBounds(10,300,90,35);
-        textfield5.setBackground(new Color(255,255,255));
-        textfield5.setForeground(new Color(0,0,0));
-        textfield5.setEnabled(true);
-        textfield5.setFont(new Font("sansserif",0,12));
-        textfield5.setText("");
-        textfield5.setVisible(true);
-
         textfield6 = new JTextField();
-        textfield6.setBounds(600,130,90,35);
+        textfield6.setBounds(800,130,90,35);
         textfield6.setBackground(new Color(255,255,255));
         textfield6.setForeground(new Color(0,0,0));
         textfield6.setEnabled(true);
@@ -309,7 +237,7 @@ public class GUI extends JFrame {
         textfield6.setVisible(true);
 
         textfield7 = new JTextField();
-        textfield7.setBounds(720,130,90,35);
+        textfield7.setBounds(920,130,90,35);
         textfield7.setBackground(new Color(255,255,255));
         textfield7.setForeground(new Color(0,0,0));
         textfield7.setEnabled(true);
@@ -317,44 +245,26 @@ public class GUI extends JFrame {
         textfield7.setText("");
         textfield7.setVisible(true);
 
-        textfield8 = new JTextField();
-        textfield8.setBounds(600,300,90,35);
-        textfield8.setBackground(new Color(255,255,255));
-        textfield8.setForeground(new Color(0,0,0));
-        textfield8.setEnabled(true);
-        textfield8.setFont(new Font("sansserif",0,12));
-        textfield8.setText("");
-        textfield8.setVisible(true);
-
         //adding components to contentPane panel
         contentPane.add(button1);
         contentPane.add(button2);
         contentPane.add(label1);
         contentPane.add(label2);
-        contentPane.add(label3);
         contentPane.add(label4);
         contentPane.add(label5);
         contentPane.add(label6);
         contentPane.add(label7);
         contentPane.add(label8);
         contentPane.add(label9);
-        contentPane.add(label10);
-        contentPane.add(label11);
         contentPane.add(label12);
         contentPane.add(label13);
-        contentPane.add(label14);
-        contentPane.add(label15);
-        contentPane.add(label16);
-        contentPane.add(label17);
         contentPane.add(label18);
         contentPane.add(textfield1);
         contentPane.add(textfield2);
         contentPane.add(textfield3);
         contentPane.add(textfield4);
-        contentPane.add(textfield5);
         contentPane.add(textfield6);
         contentPane.add(textfield7);
-        contentPane.add(textfield8);
 
         //adding panel to JFrame and seting of window position and close operation
         this.add(contentPane);
@@ -376,32 +286,56 @@ public class GUI extends JFrame {
         Pa = ConvertInput(textfield3.getText());
         No = ConvertInput(textfield4.getText());
 
-        int ConNum = -1;
-        if(!textfield5.getText().equals(""))
-            ConNum = ConvertInput(textfield5.getText());
-
-        if(Pe == -1 || Pe == -1 || Pe == -1 || Pe == -1 || ConNum == -1 ||
-        ConNum == 0 || ConNum > 14)
+        if(Pe == -1 || Pe == -1 || Pe == -1 || Pe == -1)
         {
-            label8.setText("Result: problem with input");
+            label8.setText("<html>Result: problem with input<br><br><br><br><br><br><br><br></html>");
+            label9.setText("");
             return;
         }
 
         Calculator c = new Calculator();
 
-        double consumption = c.CalculateConsumption(Pe, Ci, Pa, No, ConNum);
+        String AllConsumptions = "";
 
-        consumption = consumption * 1000;
-        consumption = Math.round(consumption);
-        consumption = consumption / 1000;
+        for(int i = 1; i <= 7; i++)
+        {
+            int ConNum = i;
+            double consumption = c.CalculateConsumption(Pe, Ci, Pa, No, ConNum);
 
-        String ConGoodName = DetConName(ConNum);
+            consumption = consumption * 1000;
+            consumption = Math.round(consumption);
+            consumption = consumption / 1000;
 
-        int NrBuildings = c.CalculateNrBuildingsNeccessary(consumption, ConNum);
+            String ConGoodName = DetConName(ConNum);
 
-        String tmp = "Number of " + DetBuildingsName(ConNum) + " required: " + NrBuildings;
+            int NrBuildings = c.CalculateNrBuildingsNeccessary(consumption, ConNum);
 
-        label8.setText("Result: " + consumption + " t " + ConGoodName + " /min. " + tmp);
+            String tmp = consumption + " t " + ConGoodName + " /min. -> " + "Number of " + DetBuildingsName(ConNum) + " needed: " + NrBuildings;
+
+            AllConsumptions = AllConsumptions + tmp + "<br>";
+        }
+        
+        String AllConsumptionsTwo = "";
+        
+        for(int i = 8; i <= 14; i++)
+        {
+            int ConNum = i;
+            double consumption = c.CalculateConsumption(Pe, Ci, Pa, No, ConNum);
+
+            consumption = consumption * 1000;
+            consumption = Math.round(consumption);
+            consumption = consumption / 1000;
+
+            String ConGoodName = DetConName(ConNum);
+
+            int NrBuildings = c.CalculateNrBuildingsNeccessary(consumption, ConNum);
+
+            String tmp = consumption + " t " + ConGoodName + " /min. " + "Number of " + DetBuildingsName(ConNum) + " needed: " + NrBuildings;
+
+            AllConsumptionsTwo = AllConsumptionsTwo + tmp + "<br>";
+        }
+        label8.setText("<html>Result:<br>" + AllConsumptions + "</html>");
+        label9.setText("<html><br>" + AllConsumptionsTwo + "</html>");
     }
 
     private void CalculateOrient (MouseEvent evt)
@@ -411,32 +345,36 @@ public class GUI extends JFrame {
         //get number of people per social class
         No = ConvertInput(textfield6.getText());
         En = ConvertInput(textfield7.getText());
-        
-        int ConNum = -1;
-        if(!textfield8.getText().equals(""))
-            ConNum = ConvertInput(textfield8.getText());
-            
-        if(No == -1 || En == -1 || ConNum == -1 || ConNum == 0 || ConNum > 7)
+
+        if(No == -1 || En == -1)
         {
-            label18.setText("Result: problem with input");
+            label18.setText("<html>Result: problem with input<br><br><br><br><br><br><br><br></html>");
             return;
         }
-        
+
         CalculatorOrient c = new CalculatorOrient();
-        
-        double consumption = c.CalculateConsumption(No, En, ConNum);
-        
-        consumption = consumption * 1000;
-        consumption = Math.round(consumption);
-        consumption = consumption / 1000;
 
-        String ConGoodName = DetConNameOrient(ConNum);
+        String AllConsumptions = "";
 
-        int NrBuildings = c.CalculateNrBuildingsNeccessary(consumption, ConNum);
+        for(int i = 1; i <= 7; i++)
+        {
+            int ConNum = i;
 
-        String tmp = "Number of " + DetBuildingsNameOrient(ConNum) + " required: " + NrBuildings;
+            double consumption = c.CalculateConsumption(No, En, ConNum);
 
-        label18.setText("Result: " + consumption + " t " + ConGoodName + " /min. " + tmp);
+            consumption = consumption * 1000;
+            consumption = Math.round(consumption);
+            consumption = consumption / 1000;
+
+            String ConGoodName = DetConNameOrient(ConNum);
+
+            int NrBuildings = c.CalculateNrBuildingsNeccessary(consumption, ConNum);
+
+            String tmp = consumption + " t " + ConGoodName + " /min. -> " + "Number of " + DetBuildingsNameOrient(ConNum) + " needed: " + NrBuildings;
+
+            AllConsumptions = AllConsumptions + tmp + "<br>";
+        }
+        label18.setText("<html>Result:<br>" + AllConsumptions + "</html>");
     }
 
     //method for generate menu
@@ -519,7 +457,7 @@ public class GUI extends JFrame {
         if(ConNum==14) return "Silk weaving mill";
         return "";
     }
-    
+
     private String DetConNameOrient(int ConNum)
     {
         if(ConNum==1) return "Date";
@@ -531,7 +469,7 @@ public class GUI extends JFrame {
         if(ConNum==7) return "Marzipan";
         return "";
     }
-    
+
     private String DetBuildingsNameOrient(int ConNum)
     {
         if(ConNum==1) return "Date plantation";
