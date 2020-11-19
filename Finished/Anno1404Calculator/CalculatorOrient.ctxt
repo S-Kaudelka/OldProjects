@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=CalculatorOrient
+comment1.params=No\ En\ ConNum
+comment1.target=double\ CalculateConsumption(int,\ int,\ int)
+comment1.text=\r\n\ int\ No\:\ number\ Nomads\r\n\ int\ En\:\ number\ Envoys\r\n
+comment2.params=Consumption\ ConNum
+comment2.target=int\ CalculateNrBuildingsNeccessary(double,\ int)
+comment3.params=ConNum
+comment3.target=void\ SetConsumption(int)
+comment4.params=ConNum
+comment4.target=double\ ConGoodProduction(int)
+numComments=5
