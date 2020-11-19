@@ -8,9 +8,13 @@ public class CONTROLER implements Runnable
     
     public boolean AmLaufen=false;
     
+    CONTROLER c;
+    
+    //Ausgabe auf Konsole wurde auskommentiert, damit es als .jar verwendet werden kann
+    
     public CONTROLER()
     {
-        h = new BILD("image\\intro0.png");
+        h = new BILD("intro0.png");
         new Thread(this).start();
     }
     

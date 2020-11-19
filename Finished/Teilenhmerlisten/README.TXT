@@ -1,14 +1,11 @@
-------------------------------------------------------------------------
-Dies ist die README-Datei des Projekts. Hier sollten Sie Ihr Projekt
-beschreiben.
-Erzählen Sie dem Leser (jemand, der nichts über dieses Projekt weiss),
-alles, was er/sie wissen muss. Üblicherweise sollte der Kommentar 
-zumindest die folgenden Angaben umfassen:
-------------------------------------------------------------------------
+Name: Teilnehmerlisten 
+ 
+Autor: Simon Kaudelka 
+ 
+Beschreibung:
+Ereugt eine Belegung für Tische mit 4 Personen pro Tisch mit mehreren Runden,
+wobei die Spieler nach jeder Rund den Platz wechseln
+Verwendungszweck: z.B. für Kartenspiel-Tunier
 
-PROJEKTBEZEICHNUNG:
-PROJEKTZWECK:
-VERSION oder DATUM:
-WIE IST DAS PROJEKT ZU STARTEN:
-AUTOR(EN):
-BENUTZERHINWEISE:
+
+Nicht als ausführbare .jar vorhanden, da die Konsole verwendet wird

@@ -23,7 +23,7 @@ public class SPIEL
     public SPIEL(CONTROLER c_p)
     {
         c = c_p;
-        hintergrund = new BILD("image\\background.png");
+        hintergrund = new BILD("background.png");
         chicken = new CHICKEN();
 
         score = SpielHoehe/2;
@@ -109,9 +109,10 @@ public class SPIEL
             if(chicken.Chicken.LeseY() >= SPIEL.SpielHoehe)
             {
                 c.end();
-                System.out.println("GameOver");
-                System.out.println("Score: " + score/10);
-                hintergrund = new BILD("image\\gameover0.png");
+                //Ausgabe auf Konsole wurde auskommentiert
+                //System.out.println("GameOver");
+                //System.out.println("Score: " + score/10);
+                hintergrund = new BILD("gameover0.png");
                 return;
             }
             

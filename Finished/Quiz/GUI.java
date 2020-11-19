@@ -183,6 +183,7 @@ public class GUI extends JFrame {
     
     //Method mouseRelesed for bNew
     private void New (MouseEvent evt) {
+        if(!Beantwortet) return;
         Neu();
     }
     

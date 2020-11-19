@@ -1,14 +1,7 @@
-------------------------------------------------------------------------
-Dies ist die README-Datei des Projekts. Hier sollten Sie Ihr Projekt
-beschreiben.
-Erzählen Sie dem Leser (jemand, der nichts über dieses Projekt weiss),
-alles, was er/sie wissen muss. Üblicherweise sollte der Kommentar 
-zumindest die folgenden Angaben umfassen:
-------------------------------------------------------------------------
+Name: Anno 1404 Calculator
 
-PROJEKTBEZEICHNUNG:
-PROJEKTZWECK:
-VERSION oder DATUM:
-WIE IST DAS PROJEKT ZU STARTEN:
-AUTOR(EN):
-BENUTZERHINWEISE:
+Author: Simon Kaudelka
+
+Description:
+A calculator for the game Anno 1404, which calculates the amount of "consumption goods" (food, drinks, clothing, property) you need to satisfy the needs for a certain number of people from the different social classes, as well as calculating the number of production-buildings needed to produce the calculated amount of goods.
+The numbers used are based on the english and the german Anno 1404 wikkis.

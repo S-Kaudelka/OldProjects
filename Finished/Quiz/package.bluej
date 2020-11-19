@@ -2,11 +2,11 @@
 dependency1.from=SPIEL
 dependency1.to=FRAGE
 dependency1.type=UsesDependency
-dependency2.from=GUI
-dependency2.to=SPIEL
+dependency2.from=SPIEL
+dependency2.to=GUI
 dependency2.type=UsesDependency
-dependency3.from=SPIEL
-dependency3.to=GUI
+dependency3.from=GUI
+dependency3.to=SPIEL
 dependency3.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816

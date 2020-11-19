@@ -1,12 +1,13 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+Name: Doodle Jump - Clone
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+Author: Simon Kaudelka
+
+Description:
+A clone of the game doodle jump
+
+Use 'A' and 'D' to move the character
+Click on the screen to (re-)start the game
+The game might be stuttering a bit sometimes
+
+
+The score is being calculated, but not displayed

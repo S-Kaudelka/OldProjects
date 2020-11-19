@@ -11,7 +11,7 @@ public class CHICKEN
     
     public CHICKEN ()
     {
-        Chicken = new BILD ("image\\Chicken.jpg");
+        Chicken = new BILD ("Chicken.jpg");
         Chicken.SetzeBreite(55);
         Chicken.SetzeHoehe(80);
         Chicken.SetzeX(SPIEL.SpielBreite/2-Chicken.LeseBreite()/2);

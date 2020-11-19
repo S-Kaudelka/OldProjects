@@ -1,3 +1,12 @@
+Name: Tower Defense 
+ 
+Autor: Simon Kaudelka 
+ 
+Beschreibung:
+Ein Tower Defense Spiel.
+
+Steuerung:
+
 Wenn ein Turm Platziert werden soll, zuerst auf den entsprechenden Platz Klicken
 
     und dann 
@@ -17,4 +26,5 @@ Um einen Turm zu Spezialisieren, wenn er Stufe 4 hat, -F drücken für einen schne
 Speichern: M (Zwischen den Wellen)
 Laden:     N (Nur bei der Levelauswahl)
 
-Erstellt von: Simon Kaudelka
+
+Nicht als ausführbare .jar vorhanden, da die Konsole verwendet wird

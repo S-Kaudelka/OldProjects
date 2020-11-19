@@ -25,7 +25,7 @@ public class PLATFORM
     
     private void Neu()
     {
-        Platform = new BILD("image\\Plattform.png");
+        Platform = new BILD("Plattform.png");
         Platform.SetzeBreite(60);
         Platform.SetzeHoehe(20);
         Platform.TransparenzSetzen(255, 255, 255);

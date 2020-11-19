@@ -8,7 +8,7 @@ public class CONTROLER implements Runnable
 
     //    ZU ERLEDIGEN:
     //
-    //
+    //    Ausgabe auf Spielfeld anstatt auf Konsole darstellen
 
     public CONTROLER()
     {

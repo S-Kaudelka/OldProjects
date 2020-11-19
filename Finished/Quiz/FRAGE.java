@@ -106,7 +106,7 @@ public class FRAGE
         i++;
         if(z == i)
         {
-            Fragestellung = "Wie heisst der Koenig/die Koenigin von Dalmasca in Final Fantasy 12?";
+            Fragestellung = "Wer waere der Koenig/die Koenigin von Dalmasca während Final Fantasy 12?";
             Antworten = new String[4];
             Antworten[0] = "Ashe";
             Antworten[1] = "Rasler";
