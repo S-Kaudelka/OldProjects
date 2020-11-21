@@ -36,11 +36,11 @@ public class GAMEWINDOW extends Canvas implements Runnable, KeyListener, MouseLi
         // get hold the content of the frame and set up the 
         // resolution of the game
         JPanel panel = (JPanel) container.getContentPane();
-        panel.setPreferredSize(new Dimension(SPIEL.SpielBreite,SPIEL.SpielHoehe));
+        panel.setPreferredSize(new Dimension(SPIEL.SpielBreite,SPIEL.SpielHoehe+20));
         panel.setLayout(null);
         
         // setup our canvas size and put it into the content of the frame
-        setBounds(0,0,SPIEL.SpielBreite,SPIEL.SpielHoehe);
+        setBounds(0,0,SPIEL.SpielBreite,SPIEL.SpielHoehe+20);
         panel.add(this);
         
         // Tell AWT not to bother repainting our canvas since we're
@@ -79,7 +79,7 @@ public class GAMEWINDOW extends Canvas implements Runnable, KeyListener, MouseLi
             // surface and blank it out
             Graphics2D g = (Graphics2D) strategy.getDrawGraphics();
             g.setColor(Color.white);
-            g.fillRect(0,0,SPIEL.SpielBreite,SPIEL.SpielHoehe);
+            g.fillRect(0,0,SPIEL.SpielBreite,SPIEL.SpielHoehe+20);
 
             synchronized(sprites)
             {

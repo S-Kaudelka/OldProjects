@@ -109,9 +109,12 @@ public class SPIEL
             if(chicken.Chicken.LeseY() >= SPIEL.SpielHoehe)
             {
                 c.end();
-                //Ausgabe auf Konsole wurde auskommentiert
-                //System.out.println("GameOver");
-                //System.out.println("Score: " + score/10);
+                DisplayScore(score/10);
+                chicken.Chicken.SetzeY(200);
+                for(int i = 0; i < anzPlat; i++)
+                {
+                    p[i].Platform.SetzeY(200);
+                }
                 hintergrund = new BILD("gameover0.png");
                 return;
             }
@@ -164,6 +167,21 @@ public class SPIEL
         
         for(int i = 0; i<anzPlat; i++){
             p[i].Bewegen();
+        }
+    }
+    
+    private void DisplayScore(int Score)
+    {
+        String s = Score + "";
+        BILD tScore = new BILD("tScore.png");
+        tScore.SetzeX(2);
+        tScore.SetzeY(SpielHoehe+3);
+        
+        for(int i = 0; i < s.length(); i++)
+        {
+            BILD b = new BILD("t"+s.charAt(i)+".png");
+            b.SetzeX(55+i*13);
+            b.SetzeY(SpielHoehe+3);
         }
     }
 
