@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=SPIEL
+comment1.params=Size_p
+comment1.target=SPIEL(int)
+comment2.params=keystate
+comment2.target=void\ RUN(KEYSTATE)
+comment3.params=m
+comment3.target=void\ MausklickUeberpruefen(java.awt.Point)
+numComments=4
