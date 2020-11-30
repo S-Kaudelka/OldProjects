@@ -3,25 +3,26 @@ import java.awt.Point;
 public class SPIEL
 {
     public BILD background;
+    public BILD BlackLine;
 
     //first [] == y, second [] == x
     private POSITION[][] pos;
-    
+
     private POSITION marked;
-    
-    private boolean NIsPressed;
-    
-    public boolean Finished;
-    
+
     //variable for new random Sudoku
     int [][] newTemplate;
     int A;
     int B;
     int C;
-    
+
     public SPIEL()
     {
-        background = new BILD("images\\background.png");
+        background = new BILD("background.png");
+        BlackLine = new BILD("line.png");
+        BlackLine.SetzeY(396);
+        BlackLine.SetzeBreite(396);
+        BlackLine.SetzeHoehe(3);
         pos = new POSITION[9][9];
         for(int i = 0; i < 9; i++)
             for(int j = 0; j < 9; j++){
@@ -32,16 +33,11 @@ public class SPIEL
     public void RUN(KEYSTATE keystate)
     {
         TastenPruefen(keystate);
-        
+
         Point p = keystate.PickLastMouseClickPosition();
         if(p != null)
         {
             MausklickUeberpruefen(p);
-        }
-        
-        if(Finished)
-        {
-            Ausgabe();
         }
     }
 
@@ -53,22 +49,6 @@ public class SPIEL
 
     public void TastenPruefen(KEYSTATE keystate)
     {
-        if(keystate.IsPressed("C")) Test();
-        if(keystate.IsPressed("N") && NIsPressed){}else NIsPressed = false;
-        if(keystate.IsPressed("N") && !NIsPressed){
-            NIsPressed = true;
-            marked = null;
-            //int[][] T = TEMPLATE.NewTemplate();
-            int[][] T = randomField();
-            /*
-             * TODO: randomise Templates 
-             */
-            for(int i = 0; i < 9; i++)
-                for(int j = 0; j < 9; j++){
-                    pos[i][j] = new POSITION(i, j);
-                    if(T[i][j] != 0)pos[i][j].FixedNumber(T[i][j]);
-                }
-        }
         if(marked != null){
             if(keystate.IsPressed("0")){
                 marked.ChangeNumber(0);
@@ -133,18 +113,34 @@ public class SPIEL
                     }
                 }
     }
-    
-    private void Test(){
+
+    public void New()
+    {
+        marked = null;
+        
+        int[][] T = randomField();
+        
+        for(int i = 0; i < 9; i++)
+            for(int j = 0; j < 9; j++)
+            {
+                pos[i][j] = new POSITION(i, j);
+                if(T[i][j] != 0)pos[i][j].FixedNumber(T[i][j]);
+            }
+    }
+
+    public boolean Test(){
         for(int i = 0; i < 9; i++) //horizontal
             for(int j = 0; j < 8; j++){
                 for(int k = j+1; k < 9; k++){
-                    if(pos[i][j].number == pos[i][k].number || pos[i][j].number == 0) return;
+                    if(pos[i][j].number == pos[i][k].number || pos[i][j].number == 0)
+                        return false;
                 }
             }
         for(int i = 0; i < 9; i++) //vertical
             for(int j = 0; j < 8; j++){
                 for(int k = j+1; k < 9; k++){
-                    if(pos[j][i].number == pos[k][i].number || pos[j][i].number == 0) return;
+                    if(pos[j][i].number == pos[k][i].number || pos[j][i].number == 0)
+                        return false;
                 }
             }
         for(int i = 0; i < 3; i++) //Blocks, from block to block
@@ -156,20 +152,14 @@ public class SPIEL
                         int b_x = l%3;
                         int b_y = (l-b_x)/3;
                         if(pos[i*3+a_y][j*3+a_x].number == pos[i*3+b_y][j*3+b_x].number
-                           || pos[i*3+a_y][j*3+a_x].number == 0)
-                            return;
+                        || pos[i*3+a_y][j*3+a_x].number == 0)
+                            return false;
                     }
-        
-        Finished = true;
-    }
-
-    public void Ausgabe()
-    {
-        System.out.println("Correct! :)");
+        return true;
     }
 
     //Ende Run    
-    
+
     public int[][] randomField(){
         newTemplate = TEMPLATE.NewTemplate();
 
@@ -345,15 +335,10 @@ public class SPIEL
 
             SwapColumn(3, 5);
 
-
             BlockSwapLine(0, 2);
-
             SwapLine(0, 2);
-
             SwapLine(6, 8);
-
             SwapLine(3, 5);
-
             return newTemplate;
         }
 
@@ -361,13 +346,13 @@ public class SPIEL
     }
 
     //Transformations
-    
+
     public void Determin_A_B(String Fall){ // Determin A and B 
         /*Parameter, whether BlockNumber or number from 0 to 8 is determined:
 
         "WithinBlock"
         "BlockNumber"
-        
+
          */
 
         A = (int) (Math.random()*3);
