@@ -13,7 +13,7 @@ public class CONTROLER implements Runnable
     //
     //
 
-    public CONTROLER(int x, int y)
+    public CONTROLER(int x, int y) //x&y between 5 and 40
     {
         X = x;
         Y = y;

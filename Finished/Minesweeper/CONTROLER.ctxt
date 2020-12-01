@@ -1,8 +1,9 @@
 #BlueJ class context
-comment0.params=x\ y
-comment0.target=CONTROLER(int,\ int)
-comment1.params=
-comment1.target=void\ run()
+comment0.target=CONTROLER
+comment1.params=x\ y
+comment1.target=CONTROLER(int,\ int)
 comment2.params=
-comment2.target=void\ stop()
-numComments=3
+comment2.target=void\ run()
+comment3.params=
+comment3.target=void\ stop()
+numComments=4

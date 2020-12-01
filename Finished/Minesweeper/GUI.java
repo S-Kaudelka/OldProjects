@@ -127,6 +127,11 @@ public class GUI extends JFrame {
             label3.setText("Spielfeld zu gross");
             return;
         }
+        if(x < 5 || y < 5)
+        {
+            label3.setText("Spielfeld zu klein");
+            return;
+        }
         
         this.dispose();
         
