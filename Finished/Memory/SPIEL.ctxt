@@ -1,18 +1,17 @@
 #BlueJ class context
-comment0.params=c_p
-comment0.target=SPIEL(CONTROLER)
+comment0.target=SPIEL
 comment1.params=
-comment1.target=void\ KartenVerteilen()
-comment2.params=keystate
-comment2.target=void\ RUN(KEYSTATE)
-comment3.params=keystate
-comment3.target=void\ KartenPruefen(KEYSTATE)
+comment1.target=SPIEL()
+comment2.params=
+comment2.target=void\ KartenVerteilen()
+comment3.params=
+comment3.target=void\ RUN()
 comment4.params=keystate
-comment4.target=void\ TastenPruefen(KEYSTATE)
+comment4.target=void\ KartenPruefen(KEYSTATE)
 comment5.params=p
 comment5.target=void\ MausklickUeberpruefen(java.awt.Point)
 comment6.params=
 comment6.target=void\ Ausgabe()
 comment7.params=
-comment7.target=void\ AusgabeLoeschen()
+comment7.target=void\ ClearField()
 numComments=8

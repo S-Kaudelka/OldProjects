@@ -2,7 +2,7 @@ import java.awt.Point;
 
 public class SPIEL
 {
-    private CONTROLER c;
+    private GAMEWINDOW g;
 
     private boolean IstVeraendert;
 
@@ -19,17 +19,20 @@ public class SPIEL
     public int Paare1;
     public int Paare2;
 
-    public SPIEL(CONTROLER c_p)
+    public boolean ende;
+
+    public SPIEL()
     {
-        c = c_p;
         K = new KARTE[4][4];
 
         IstVeraendert = true;
         S1AmZug = true;
 
         KartenVerteilen();
+
+        g = GAMEWINDOW.getInstance();
     }
-    
+
     public void KartenVerteilen()
     {
         int aDrei = 0; int aHerz = 0; int aKreis = 0; int aKreuz = 0; int aPL = 0;
@@ -67,11 +70,55 @@ public class SPIEL
                 }
             }
         }
+
+        //Make Sure Two Cards Don't Have A Partner
+        if(aDrei != 1 && aHerz != 1 && aKreis != 1 && aKreuz != 1 &&
+        aPL != 1 && aPO != 1 && aRau != 1 && aSechs != 1 && aStern != 1)
+        {
+            int x = (int) (Math.random()*4);
+            int y = (int) (Math.random()*4);
+            if(aDrei == 0)
+            {
+                K[y][x].Typ = "Dreieck";
+            }
+            if(aHerz == 0)
+            {
+                K[y][x].Typ = "Herz";
+            }
+            if(aKreis == 0)
+            {
+                K[y][x].Typ = "Kreis";
+            }
+            if(aKreuz == 0)
+            {
+                K[y][x].Typ = "Kreuz";
+            }
+            if(aPL == 0)
+            {
+                K[y][x].Typ = "PfeilL";
+            }
+            if(aPO == 0)
+            {
+                K[y][x].Typ = "PfeilO";
+            }
+            if(aRau == 0)
+            {
+                K[y][x].Typ = "Raute";
+            }
+            if(aSechs == 0)
+            {
+                K[y][x].Typ = "Sechseck";
+            }
+            if(aStern == 0)
+            {
+                K[y][x].Typ = "Stern";
+            }
+        }
     }
 
-    public void RUN(KEYSTATE keystate)
+    public void RUN()
     {
-        TastenPruefen(keystate);
+        KEYSTATE keystate = g.getKeystate();
 
         Point p = keystate.PickLastMouseClickPosition();
         if(p != null)
@@ -81,7 +128,7 @@ public class SPIEL
 
         KartenPruefen(keystate);
 
-        if(IstVeraendert==true)
+        if(IstVeraendert)
         {
             Ausgabe();
         }
@@ -132,14 +179,6 @@ public class SPIEL
         }
     }
 
-    public void TastenPruefen(KEYSTATE keystate)
-    {
-        if(keystate.IsPressed("B")) //Bsp
-        {
-
-        }
-    }
-
     public void MausklickUeberpruefen(Point p)
     {
         for(int u = 0; u<4; u++)
@@ -169,23 +208,11 @@ public class SPIEL
     {
         IstVeraendert = false;
 
-        AusgabeLoeschen();
+        g.ChangeTurn(S1AmZug);
+        g.UpdateScore(Paare1, Paare2);
 
-        if(S1AmZug)
+        if(Paare1 == 4 || Paare2 == 4)
         {
-            System.out.println("Spieler 1 ist am Zug");
-        }
-        else
-        {
-            System.out.println("Spieler 2 ist am Zug");
-        }
-        System.out.println("Paare Spieler 1: " + Paare1);
-        System.out.println("Paare Spieler 2: " + Paare2);
-
-        if(Paare1 + Paare2 == 7)
-        {
-            c.stop();
-
             for(int u = 0; u<4; u++)
             {
                 for(int r = 0; r<4; r++)
@@ -194,21 +221,20 @@ public class SPIEL
                 }
             }
 
-            if(Paare1 > Paare2)
-            {
-                System.out.println("Spieler 1 hat Gewonnen");
-            }
-            else
-            {
-                System.out.println("Spieler 2 hat Gewonnen");
-            }
+            g.Victory(Paare1 > Paare2);
         }
     }
 
     //Ende Run
 
-    public void AusgabeLoeschen()
+    public void ClearField()
     {
-        System.out.print('\u000C');
+        for(int u = 0; u<4; u++)
+        {
+            for(int r = 0; r<4; r++)
+            {
+                K[u][r].Skin.SetzeY(-2000);
+            }
+        }
     }
 }

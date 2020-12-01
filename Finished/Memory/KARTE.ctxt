@@ -1,8 +1,9 @@
 #BlueJ class context
-comment0.params=
-comment0.target=KARTE()
+comment0.target=KARTE
 comment1.params=
-comment1.target=void\ Aufdecken()
+comment1.target=KARTE()
 comment2.params=
-comment2.target=void\ Verdecken()
-numComments=3
+comment2.target=void\ Aufdecken()
+comment3.params=
+comment3.target=void\ Verdecken()
+numComments=4
