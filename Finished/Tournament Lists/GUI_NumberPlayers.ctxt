@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=GUI_NumberPlayers
+comment1.params=
+comment1.target=GUI_NumberPlayers()
+comment2.params=evt
+comment2.target=void\ mouseClicked(java.awt.event.MouseEvent)
+comment3.params=evt
+comment3.target=void\ NextStep(java.awt.event.MouseEvent)
+comment4.params=S
+comment4.target=int\ ConvertInput(java.lang.String)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+comment6.params=
+comment6.target=void\ run()
+numComments=7

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TEST
+comment1.params=Names_p
+comment1.target=TEST(java.lang.String[])
+comment2.params=
+comment2.target=TEST()
+comment3.params=
+comment3.target=void\ NeuListen()
+comment4.params=
+comment4.target=void\ AusgabeBelegungslisten()
+comment5.params=
+comment5.target=void\ MehrmalsGespielt()
+numComments=6

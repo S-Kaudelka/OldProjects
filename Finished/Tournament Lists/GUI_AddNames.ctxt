@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=GUI_AddNames
+comment1.params=nP
+comment1.target=GUI_AddNames(int)
+comment2.params=evt
+comment2.target=void\ mouseClicked(java.awt.event.MouseEvent)
+comment3.params=evt
+comment3.target=void\ mouseClicked(java.awt.event.MouseEvent)
+comment4.params=evt
+comment4.target=void\ AddPerson(java.awt.event.MouseEvent)
+comment5.params=evt
+comment5.target=void\ CreateList(java.awt.event.MouseEvent)
+comment6.params=args
+comment6.target=void\ main(int)
+comment7.params=
+comment7.target=void\ run()
+numComments=8
