@@ -7,13 +7,18 @@ import java.awt.event.*;
 public class GAMEWINDOW extends Canvas implements Runnable, KeyListener, MouseListener, MouseMotionListener
 {
     public static final int Breite = 700;
-    public static final int Hoehe = 300;
+    public static final int Hoehe = 340;
+    
+    public static int nLayers;
     
     private BufferStrategy strategy;
     private long lastLoopTime;
     private boolean gameRunning=true;
     private static GAMEWINDOW instance;
     private String Taste="";
+    
+    private JLabel label1;
+    private JLabel label2;
     
     private Vector<BILD> sprites=new Vector<BILD>();
     
@@ -42,8 +47,31 @@ public class GAMEWINDOW extends Canvas implements Runnable, KeyListener, MouseLi
         panel.setPreferredSize(new Dimension(Breite,Hoehe));
         panel.setLayout(null);
         
+        label1 = new JLabel();
+        label1.setBounds(20,0,700,20);
+        label1.setBackground(new Color(192,192,192));
+        label1.setForeground(new Color(0,0,0));
+        label1.setEnabled(true);
+        label1.setFont(new Font("sansserif",0,12));
+        label1.setText("A, S, D to select the respective pillars;   "+
+                       "Mousclick on a Pillar to place the selected layer;   "+
+                       "Y to deselect the current layer.");
+        label1.setVisible(true);
+        
+        label2 = new JLabel();
+        label2.setBounds(20,322,700,20);
+        label2.setBackground(new Color(192,192,192));
+        label2.setForeground(new Color(0,0,0));
+        label2.setEnabled(true);
+        label2.setFont(new Font("sansserif",0,12));
+        label2.setText("Number of Layers: " + nLayers + ";     Currently selected: ");
+        label2.setVisible(true);
+        
+        panel.add(label1);
+        panel.add(label2);
+        
         // setup our canvas size and put it into the content of the frame
-        setBounds(0,0,Breite,Hoehe);
+        setBounds(10,20,Breite,Hoehe);
         panel.add(this);
         
         // Tell AWT not to bother repainting our canvas since we're
@@ -81,7 +109,7 @@ public class GAMEWINDOW extends Canvas implements Runnable, KeyListener, MouseLi
             // Get hold of a graphics context for the accelerated 
             // surface and blank it out
             Graphics2D g = (Graphics2D) strategy.getDrawGraphics();
-            g.setColor(Color.white);
+            g.setColor(new Color(217,217,217));
             g.fillRect(0,0,Breite,Hoehe);
 
             synchronized(sprites)
@@ -191,6 +219,14 @@ public class GAMEWINDOW extends Canvas implements Runnable, KeyListener, MouseLi
     {
        
     }
+    
+    public void SetLayer(String von)
+    {
+        label2.setText("Number of Layers: " + nLayers + ";     Currently selected: "+von);
+    }
+    
+    public void End()
+    {
+        label2.setText("Number of Layers: " + nLayers + ";     Congratulations, you won!");
+    }
 }
-
-

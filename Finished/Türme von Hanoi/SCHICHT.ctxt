@@ -1,4 +1,5 @@
 #BlueJ class context
-comment0.params=h
-comment0.target=SCHICHT(int)
-numComments=1
+comment0.target=SCHICHT
+comment1.params=h
+comment1.target=SCHICHT(int)
+numComments=2

@@ -12,13 +12,14 @@ public class SPIEL
     public SCHICHT[] Schichten;
 
     public SCHICHT Genommen;
-    public String von;
+    public static String von;
 
     public int AnzEbenen;
 
     public SPIEL(CONTROLER c_p, int AnzEbenen_p)
     {
         c = c_p;
+        GAMEWINDOW.nLayers = AnzEbenen_p;
         AnzEbenen = AnzEbenen_p;
         IstVeraendert = true;
         
@@ -97,6 +98,7 @@ public class SPIEL
             }
             Genommen = s;
             von = "A";
+            GAMEWINDOW.getInstance().SetLayer(von);
         }
         if(keystate.IsPressed("S"))
         {
@@ -113,6 +115,7 @@ public class SPIEL
             }
             Genommen = s;
             von = "S";
+            GAMEWINDOW.getInstance().SetLayer(von);
         }
         if(keystate.IsPressed("D"))
         {
@@ -129,6 +132,7 @@ public class SPIEL
             }
             Genommen = s;
             von = "D";
+            GAMEWINDOW.getInstance().SetLayer(von);
         }
         if(keystate.IsPressed("Y"))
         {
@@ -140,6 +144,7 @@ public class SPIEL
                     Genommen=null;
                 }
                 von = "";
+                GAMEWINDOW.getInstance().SetLayer(von);
             }
             if(von.equals("S"))
             {
@@ -149,6 +154,7 @@ public class SPIEL
                     Genommen=null;
                 }
                 von = "";
+                GAMEWINDOW.getInstance().SetLayer(von);
             }
             if(von.equals("D"))
             {
@@ -158,6 +164,7 @@ public class SPIEL
                     Genommen=null;
                 }
                 von = "";
+                GAMEWINDOW.getInstance().SetLayer(von);
             }
             IstVeraendert = true;
         }
@@ -184,6 +191,8 @@ public class SPIEL
                         Genommen.Skin.SetzeY(280-Staebe[i].NummerOberster()*20);
                         Genommen = null;
                         IstVeraendert = true;
+                        von = "";
+                        GAMEWINDOW.getInstance().SetLayer(von);
                     }
                 }
             }
@@ -199,32 +208,13 @@ public class SPIEL
                 return;
             }
         }
+        GAMEWINDOW.getInstance().End();
         c.stop();
-        AusgabeLoeschen();
-        System.out.println("Anzahl Schichten: "+AnzEbenen);
-        System.out.println("Geschafft :)");
     }
 
     public void Ausgabe()
     {
         IstVeraendert = false;
-        AusgabeLoeschen();
-
-        System.out.println("Anzahl Schichten: "+AnzEbenen);
-        if(Genommen != null)
-        {
-            System.out.println("Höhe der ausgewaehlten Schicht: "+(Genommen.Hoehe+1));
-            System.out.println("Genommen von "+von);
-        }
-        else
-        {
-            System.out.println("Keine Schicht ausgewaehlt");
-        }
-        if(SLeer)
-        {
-            System.out.println("Der Ausgewaehlte Stab ist leer");
-            SLeer = false;
-        }
     }
 
     //Ende Run

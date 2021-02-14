@@ -14,5 +14,3 @@ Um die Schicht zu platzieren, auf einen anderen Stab klicken
 Um die Schicht abzuwählen, Y drücken
 
 Tipp: bei ungerader anzahl an Schichten die oberste da hinlegen, wa am schluss der Turm sein soll
-
-Nicht als ausführbare .jar vorhanden, da die Konsole verwendet wird
