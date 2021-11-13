@@ -3,8 +3,8 @@ import java.awt.Point;
 public class SPIEL
 {
     private CONTROLER c;
-
-    private boolean IstVeraendert = true;
+    
+    private GAMEWINDOW g = GAMEWINDOW.getInstance();
 
     private FELD[][] SF; //Spielfeld
     private int X;
@@ -26,6 +26,7 @@ public class SPIEL
         {
             anzMinen = 1;
         }
+        g.label2.setText("Minen: " + anzMinen);
         Aufdecken = true;
 
         SF = new FELD[Y][X];
@@ -34,7 +35,7 @@ public class SPIEL
         {
             for(int r = 0; r < X; r++)
             {
-                SF[u][r] = new FELD(r, u);
+                SF[u][r] = new FELD(r, u+2); //+2 == offset for the menue at the top
                 int z = (int) (Math.random()*X*Y);
                 if(z <= anzMinen && MinenPlatziert < anzMinen)
                 {
@@ -103,9 +104,8 @@ public class SPIEL
         if(!zuViele && anzMarkiert == anzMinen)
         {
             c.stop();
-            AusgabeLoeschen();
             Ausgabe();
-            System.out.println("Gewonnen");
+            g.label3.setText("GEWONNEN!");;
             return;
         }
         
@@ -118,11 +118,6 @@ public class SPIEL
         }
 
         AlleGefunden();
-
-        if(IstVeraendert==true)
-        {
-            Ausgabe();
-        }
     }
 
     //
@@ -136,12 +131,12 @@ public class SPIEL
         if(keystate.IsPressed("M")) // Markieren
         {
             Aufdecken = false;
-            IstVeraendert = true;
+            g.label3.setText("Modus: Markieren");
         }
         if(keystate.IsPressed("N")) // Aufdecken
         {
             Aufdecken = true;
-            IstVeraendert = true;
+            g.label3.setText("Modus: Aufdecken");
         }
     }
 
@@ -169,7 +164,6 @@ public class SPIEL
         boolean e = SF[u][r].Beruehrt(Aufdecken);
         if(!e && Aufdecken)
         {
-            IstVeraendert = true;
             if(SF[u][r].MinenAngrenzend == 0)
             {
                 //Direkt angenzend
@@ -230,7 +224,7 @@ public class SPIEL
                 {
                     anzMarkiert--;
                 }
-                IstVeraendert = true;
+                g.label1.setText("Markiert: " + anzMarkiert);
             }
         }
     }
@@ -277,12 +271,8 @@ public class SPIEL
                 }
             }
         }
-        AusgabeLoeschen();
-        System.out.println("Anzahl Minen: " + anzMinen);
-        System.out.println("Anzahl Markierte: " + anzMarkiert);
-        System.out.println("Richtig Markierte: " + AnzRichtigMark);
-        System.out.println("Falsch Markierte: " + AnzFalschMark);
-        IstVeraendert = false;
+        g.label3.setText("GAME OVER!");
+        c.stop();
     }
 
     public void AlleGefunden()
@@ -309,9 +299,7 @@ public class SPIEL
                         gefundene++;
                         if(gefundene == anzMinen)
                         {
-                            IstVeraendert = false;
-                            AusgabeLoeschen();
-                            System.out.println("Gewonnen");
+                            g.label3.setText("GEWONNEN!");
                             c.stop();
                         }
                     }
@@ -322,7 +310,6 @@ public class SPIEL
                             if(!zuViele)
                             {
                                 zuViele = true;
-                                IstVeraendert = true;
                             }
                             return;
                         }
@@ -335,30 +322,9 @@ public class SPIEL
 
     public void Ausgabe()
     {
-        IstVeraendert = false;
-        AusgabeLoeschen();
-        System.out.println("Anzahl Minen: " + anzMinen);
-        if(Aufdecken)
-        {
-            System.out.println("Modus: Aufdecken");
-        }
-        else
-        {
-            System.out.println("Modus: Markieren");
-        }
-        System.out.println("Anzahl Markierte: " + anzMarkiert);
         if(zuViele)
         {
-            System.out.println("Zu viele markiert");
+            //should i add another line?
         }
-    }
-
-    //
-    //Ende Run
-    //
-
-    public void AusgabeLoeschen()
-    {
-        System.out.print('\u000C');
     }
 }

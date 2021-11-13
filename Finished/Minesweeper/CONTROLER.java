@@ -18,7 +18,7 @@ public class CONTROLER implements Runnable
         X = x;
         Y = y;
         GAMEWINDOW.Breite = x*25;
-        GAMEWINDOW.Hoehe = y*25;
+        GAMEWINDOW.Hoehe = y*25+50;
         spiel = new SPIEL(this, x, y);
         new Thread(this).start();
     }

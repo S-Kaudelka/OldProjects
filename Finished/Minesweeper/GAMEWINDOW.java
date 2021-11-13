@@ -9,6 +9,10 @@ public class GAMEWINDOW extends Canvas implements Runnable, KeyListener, MouseLi
     public static int Breite;
     public static int Hoehe;
     
+    public JLabel label1;
+    public JLabel label2;
+    public JLabel label3;
+    
     private BufferStrategy strategy;
     private long lastLoopTime;
     private boolean gameRunning=true;
@@ -41,6 +45,39 @@ public class GAMEWINDOW extends Canvas implements Runnable, KeyListener, MouseLi
         JPanel panel = (JPanel) container.getContentPane();
         panel.setPreferredSize(new Dimension(Breite,Hoehe));
         panel.setLayout(null);
+        
+        
+        
+        label1 = new JLabel();
+        label1.setBounds(0,7,65,11);
+        label1.setBackground(new Color(255,255,255));
+        label1.setForeground(new Color(0,0,0));
+        label1.setEnabled(true);
+        label1.setFont(new Font("sansserif",0,10));
+        label1.setText("Markiert:");
+        label1.setVisible(true);
+
+        label2 = new JLabel();
+        label2.setBounds(65,7,60,11);
+        label2.setBackground(new Color(214,217,223));
+        label2.setForeground(new Color(0,0,0));
+        label2.setEnabled(true);
+        label2.setFont(new Font("sansserif",0,10));
+        label2.setText("Minen:");
+        label2.setVisible(true);
+        
+        label3 = new JLabel();
+        label3.setBounds(0,31,125,13);
+        label3.setBackground(new Color(214,217,223));
+        label3.setForeground(new Color(0,0,0));
+        label3.setEnabled(true);
+        label3.setFont(new Font("sansserif",0,12));
+        label3.setText("Modus: Aufdecken");
+        label3.setVisible(true);
+
+        panel.add(label1);
+        panel.add(label2);
+        panel.add(label3);
         
         // setup our canvas size and put it into the content of the frame
         setBounds(0,0,Breite,Hoehe);

@@ -52,7 +52,6 @@ public class FELD
             Skin.SetzeY(y);
             Skin.SetzeHoehe(25);
             Skin.SetzeBreite(25);
-            System.out.println("Game Over");
             return true;
         }
         else

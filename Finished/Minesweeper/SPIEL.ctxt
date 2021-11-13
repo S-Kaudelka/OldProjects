@@ -16,6 +16,4 @@ comment7.params=
 comment7.target=void\ AlleGefunden()
 comment8.params=
 comment8.target=void\ Ausgabe()
-comment9.params=
-comment9.target=void\ AusgabeLoeschen()
-numComments=10
+numComments=9
