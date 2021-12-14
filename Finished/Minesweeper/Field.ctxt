@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Field
+comment1.params=x\ y
+comment1.target=Field(int,\ int)
+comment2.params=newName
+comment2.target=void\ ChangeImage(java.lang.String)
+numComments=3

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=SPIEL
+comment1.params=
+comment1.target=SPIEL()
+comment2.params=keystate
+comment2.target=void\ RUN(KEYSTATE)
+comment3.params=m
+comment3.target=void\ TestMouseClick(java.awt.Point)
+comment4.params=x\ y
+comment4.target=void\ flip_field(int,\ int)
+comment5.params=x\ y
+comment5.target=void\ mark_field(int,\ int)
+comment6.params=
+comment6.target=void\ Victory()
+comment7.params=
+comment7.target=void\ Game_Over()
+numComments=8

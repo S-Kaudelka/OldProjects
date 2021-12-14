@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=CONTROLLER
+comment1.params=height\ width
+comment1.target=CONTROLLER(int,\ int)
+comment2.params=
+comment2.target=void\ run()
+comment3.params=
+comment3.target=void\ stop()
+numComments=4
