@@ -1,2 +1,2 @@
 # OldProjects
-Old (and hopefully finished) Projects
+Some old projects I made when I was bored
